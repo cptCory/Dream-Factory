@@ -1,0 +1,22 @@
+<!-- index.html where it all begins -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DreamFactory</title>
+		<link rel='stylesheet' type='text/css' href='StyleSheet.css' /> <!-- external stylesheet for a pimpi'n design!  -->
+		<script type='text/javascript' src='script/DreamFactory-0.2-min.js'></script> <!-- compact version of the DreamFactory API (tiny engine) -->
+		<script type='text/javascript' src='script/gl-matrix-min.js'></script> <!-- glMatrix by toji @ https://github.com/toji/gl-matrix -->
+	</head>
+	<body onload='startEngine();'>
+		<table>
+			<tr>
+				<td><fieldset><legend>Canvas:</legend><canvas id='webGLcanvas'></canvas></fieldset></td>
+				<td><fieldset><legend>Debug Window:</legend><div id='toolbar'></div></fieldset></td>
+			</tr>
+			<tr>
+				<td colspan='2'><fieldset><legend>Console:</legend><div id='console'><p>A</p><p>B</p><p>C</p><p>D</p><p>E</p></div></fieldset></td>
+			</tr>
+		</table>
+	</body>
+</html>
